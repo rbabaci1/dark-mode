@@ -11,5 +11,5 @@ export const useDarkMode = () => {
       : document.body.classList.remove('dark-mode');
   }, [OnDarkMode]);
 
-  return [setOnDarkMode];
+  return [OnDarkMode, setOnDarkMode];
 };
