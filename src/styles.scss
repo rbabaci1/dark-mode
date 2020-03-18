@@ -229,18 +229,43 @@ img {
 
 .coin__title {
   display: block;
-  margin-left: 8px;
+  margin-bottom: 5px;
   min-width: 160px;
-  text-align: left;
+  text-align: center;
 }
 
 .coin__symbol {
-  display: block;
   margin-bottom: 10px;
 }
 
 .coin__logo {
   width: 50px;
+}
+
+.l-h {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+  margin: 15px 0 3px 0;
+  align-items: center;
+
+  h2 {
+    color: rgb(95, 80, 70);
+    align-self: flex-start;
+  }
+  .low {
+    span {
+      color: rgb(250, 56, 21);
+    }
+  }
+  .current {
+    color: rgb(10, 160, 247);
+  }
+  .high {
+    span {
+      color: #49ce98;
+    }
+  }
 }
 
 .dark-mode {
@@ -250,5 +275,33 @@ img {
   .navbar {
     background-color: #1f2022;
     border: none;
+  }
+  .recharts-curve {
+    stroke: #49ce98;
+  }
+  .recharts-surface {
+    background-color: #1b1f25;
+    padding: 15px;
+  }
+  .l-h {
+    width: 87%;
+    h2 {
+      color: rgb(199, 201, 202);
+      align-self: flex-start;
+    }
+
+    .low {
+      span {
+        color: rgb(250, 56, 21);
+      }
+    }
+    .current {
+      color: rgb(10, 160, 247);
+    }
+    .high {
+      span {
+        color: #49ce98;
+      }
+    }
   }
 }

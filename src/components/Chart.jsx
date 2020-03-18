@@ -28,13 +28,15 @@ const Chart = ({ sparkLineData }) => {
     .filter(data => data);
 
   return (
-    <LineChart width={1100} height={300} data={formattedData}>
-      <Line type='monotone' dataKey='value' stroke='#8884d8' />
-      <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
-      <XAxis dataKey='date' interval={3} />
-      <YAxis />
-      <Tooltip />
-    </LineChart>
+    <>
+      <LineChart width={1000} height={350} data={formattedData}>
+        <Line type='monotone' dataKey='value' stroke='#8884d8' />
+        <CartesianGrid stroke='gray' strokeDasharray='5 5' />
+        <XAxis dataKey='date' interval={3} />
+        <YAxis />
+        <Tooltip />
+      </LineChart>
+    </>
   );
 };
 
